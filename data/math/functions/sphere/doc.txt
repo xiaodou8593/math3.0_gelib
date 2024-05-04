@@ -1,0 +1,7 @@
+# sphere的临时对象
+{
+	<x,int>,<y,int>,<z,int>,
+	<r,int>
+}
+
+注意：r为1k倍率
