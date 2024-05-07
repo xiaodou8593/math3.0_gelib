@@ -1,4 +1,5 @@
 #math:box/y_range
+# math:box/_if_anchor调用
 
 scoreboard players set sstemp int 0
 execute if score sstemp0 int matches ..0 if score sstemp1 int matches 0.. run scoreboard players set sstemp int 1

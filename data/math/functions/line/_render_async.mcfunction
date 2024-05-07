@@ -4,6 +4,9 @@
 # 输出<res,int>表示渲染是否结束
 # 需要以世界实体为执行者
 
+# 提前退出
+execute if data storage math:io render_progress.exit run return run scoreboard players set res int 1
+
 # 加载位置和朝向
 data modify entity @s Pos set from storage math:io render_progress.pos
 data modify entity @s Rotation set from storage math:io render_progress.rotation
@@ -27,5 +30,6 @@ execute store result storage math:io render_progress.cur_t int 1 run scoreboard 
 
 # 渲染已经结束
 execute store result score res int if score sstemp_cur int >= sstemp_l int
+execute if score res int matches 1 run data modify storage math:io render_progress.exit set value 1b
 
 tp @s 0 0 0

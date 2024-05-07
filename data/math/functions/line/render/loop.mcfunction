@@ -1,4 +1,5 @@
 #math:line/render/loop
+# math:line/_render调用
 
 tp @s ~ ~ ~
 $$(render_command)

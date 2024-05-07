@@ -1,4 +1,5 @@
 #math:sphere/render/loop
+# math:sphere/_render_cnt调用
 
 # 计算单位球的z坐标
 scoreboard players operation uvec_z int = ssloop int

@@ -1,4 +1,5 @@
 #math:line/test/render_main
+# math:line/test/render_async_start异步调用
 
 execute at @s anchored eyes positioned ^ ^ ^ as 0-0-0-0-0 run function math:line/_from_anchor
 
